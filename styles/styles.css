@@ -1,0 +1,42 @@
+.carousel-item {
+  filter: blur(3px); /* Add a blur effect to all items */
+}
+
+.carousel-item.active {
+  filter: none; /* Remove blur for the active item */
+}
+
+.carousel-item-left, .carousel-item-right {
+  filter: blur(3px); /* Blur the adjacent items */
+}
+
+.carousel-inner {
+  display: flex;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: rgb(0, 0, 0);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: rgb(0, 0, 0);
+}
