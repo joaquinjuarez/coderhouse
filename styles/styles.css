@@ -40,3 +40,59 @@ body {
   font-size: 55px;
   color: rgb(0, 0, 0);
 }
+ 
+.seriesmain {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.movies, .series {
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.movie, .serie {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  background-color: rgba(180, 187, 79, 0.644);
+  border-radius: 5px;
+}
+
+.movie img, .series img {
+  max-width: 100%;
+  height: auto;
+}
+
+.seriesbutton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.reproductormain { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#videoContainer {
+  max-width: 50%;
+}
+@media (max-width: 768px) {
+  .movie, .serie {
+      width: 100%; /* Full width for smaller screens */
+  }
+}

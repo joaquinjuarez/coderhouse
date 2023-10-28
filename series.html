@@ -8,29 +8,85 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">Series Animadas</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Series Animadas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./series.html">Series</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Peliculas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sobre Nosotros</a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./series.html">Series</a>
+                </li>                 
+                <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
+                </li>
             </ul>
-          </div>
         </div>
-    </nav>
+        
+        
+        <form action="./login.html">
+         <button class="btn btn-primary ml-auto" type="submit">Log in</button>
+        </form>
+        <form action="./registrarse.html">
+          <button class="btn btn-primary ml-auto">Registrarse</button>
+        </form>
+    </div>
+  </nav>
+  <main class="seriesmain">
+    <h2>Peliculas</h2>
+    <section class="movies">
+        
+        <div class="movie">
+            <img src="./images/anastasia.webp" >
+            <h3>Anastasia</h3>
+            
+            <button class="seriesbutton" onclick="playVideo('https://www.youtube.com/embed/M0vnBeHeuzs')">Watch</button>
+        </div>
+        <div class="movie">
+            <img src="./images/ghostintheshell.webp" >
+            <h3>Ghost in the shell</h3>
+            
+            <button class="seriesbutton" onclick="playVideo('https://www.youtube.com/embed/8RF09G8Ymqg')">Watch</button>
+        </div>
+        <div class="movie">
+            <img src="./images/spirited away.jpg" >
+            <h3>Spirited away</h3>
+            
+            <button class="seriesbutton" onclick="playVideo('https://www.youtube.com/embed/CHCUkXUPkFM')">Watch</button>
+        </div>
+       
+    </section>
+    <h2>Series</h2>
+    <section class="series">
+     
+        <div class="serie">
+            <img src="./images/adventuretime.jpg" >
+            <h3>Adventure time</h3>
+            <button class="seriesbutton" onclick="playVideo('https://www.youtube.com/embed/fnCT7d7THpY')">Watch</button>
+        </div>
+        <div class="serie">
+            <img src="./images/gravityfalls.jpg">
+            <h3>Gravity Falls</h3>
+            <button class="seriesbutton" onclick="playVideo('https://www.youtube.com/embed/o2E2wLm_LlY')">Watch</button>
+        </div>
+        <div class="serie">
+          <img src="./images/avatar.jpg">
+          <h3>Avatar</h3>
+          <button class="seriesbutton" onclick="playVideo('https://www.youtube.com/embed/ZaRwqa2xVJg')">Watch</button>
+      </div>
+       
+    </section>
+</main>
+<script>
+    function playVideo(embedUrl) {
+        
+        window.location.href = `reproductor.html?embedUrl=${encodeURIComponent(embedUrl)}`;
+    }
+</script>
 </body>
 </html>
