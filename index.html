@@ -27,11 +27,9 @@
                     </li>
                 </ul>
             </div>
-            <form action="./login.html">
-             <button class="btn btn-primary ml-auto" type="submit">Log in</button>
-            </form>
+            <button class="btn btn-outline-warning" id="loginButton">Login</button>
             <form action="./registrarse.html">
-              <button class="btn btn-primary ml-auto">Registrarse</button>
+              <button class="btn btn-outline-warning">Registrarse</button>
             </form>
         </div>
     </nav>
@@ -73,6 +71,37 @@
           </a>
         </div>
       </div>
+      <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span id="closeModal" style="float: right; cursor: pointer;">&times;</span>
+            <label for="username">Usuario</label>
+            <input type="text" id="username" class="form-input">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" class="form-input">
+            <button id="confirmButton" class="btn btn-outline-secondary">Confirm</button>
+        </div>
+    </div>
+
+    <script>
+        const loginButton = document.getElementById('loginButton');
+        const loginModal = document.getElementById('loginModal');
+        const closeModal = document.getElementById('closeModal');
+        const confirmButton = document.getElementById('confirmButton');
+
+        loginButton.addEventListener('click', () => {
+            loginModal.style.display = 'block';
+        });
+
+        closeModal.addEventListener('click', () => {
+            loginModal.style.display = 'none';
+        });
+
+        confirmButton.addEventListener('click', () => {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            alert(`Username: ${username}\nPassword: ${password}`);
+        });
+    </script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>

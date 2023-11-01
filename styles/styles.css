@@ -1,13 +1,13 @@
 .carousel-item {
-  filter: blur(3px); /* Add a blur effect to all items */
+  filter: blur(3px); 
 }
 
 .carousel-item.active {
-  filter: none; /* Remove blur for the active item */
+  filter: none; 
 }
 
 .carousel-item-left, .carousel-item-right {
-  filter: blur(3px); /* Blur the adjacent items */
+  filter: blur(3px); 
 }
 
 .carousel-inner {
@@ -15,9 +15,7 @@
 }
 
 body {
-  background-image: url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+background-color: gray;
 } 
 
 .carousel-control-prev-icon,
@@ -42,14 +40,17 @@ body {
 }
  
 .seriesmain {
-  max-width: 1200px;
+
   margin: 0 auto;
   padding: 20px;
+  background-color: gray;
 }
 
 .movies, .series {
   margin-bottom: 40px;
   display: flex;
+  max-width: 1200px;
+  
 }
 
 .movie, .serie {
@@ -59,7 +60,7 @@ body {
   display: inline-block;
   width: 30%;
   text-align: center;
-  background-color: rgba(180, 187, 79, 0.644);
+  background-color: rgba(43, 41, 41, 0.644);
   border-radius: 5px;
 }
 
@@ -95,4 +96,85 @@ button:hover {
   .movie, .serie {
       width: 100%; /* Full width for smaller screens */
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: #fff;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.maincontainer {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.contactcontainer {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1.5fr; 
+  align-items: center;
+  height: 100vh;
+  justify-items: center;
+}
+
+.signin-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.form-heading {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+
+.input-container {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+.left-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.left-text {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.spacer {
+  width: 100%;
 }
