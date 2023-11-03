@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="bodygrid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navgrid">
     <div class="container">
         <a class="navbar-brand" href="#">Series Animadas</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@
                     <a class="nav-link" href="./series.html">Series</a>
                 </li>                 
                 <li class="nav-item">
-                    <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
+                    <a class="nav-link" href="./contactanos.html">Contactanos</a>
                 </li>
             </ul>
         </div>
@@ -33,10 +33,8 @@
         </form>
     </div>
   </nav>
-  <main class="seriesmain">
-    <h2>Peliculas</h2>
+
     <section class="movies">
-        
         <div class="movie">
             <img src="./images/anastasia.webp" >
             <h3>Anastasia</h3>
@@ -51,12 +49,20 @@
             <img src="./images/spirited away.jpg" >
             <h3>Spirited away</h3>
             <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/CHCUkXUPkFM')">Watch</button>
-        </div>
-       
+        </div> 
+        <div class="movie">
+            <img src="./images/atlantis.jpg" >
+            <h3>Atlantis</h3>
+            <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/sZIimDPZQwg')">Watch</button>
+        </div> 
+        <div class="movie">
+            <img src="./images/tarzan.jpg" >
+            <h3>Tarzan</h3>
+            <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/ie53R2HEZ6g')">Watch</button>
+        </div> 
     </section>
-    <h2>Series</h2>
+    
     <section class="series">
-     
         <div class="serie">
             <img src="./images/adventuretime.jpg" >
             <h3>Adventure time</h3>
@@ -71,10 +77,18 @@
           <img src="./images/avatar.jpg">
           <h3>Avatar</h3>
           <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/ZaRwqa2xVJg')">Watch</button>
-      </div>
-       
+        </div>
+        <div class="serie">
+            <img src="./images/invencible.jpg">
+            <h3>Invencible</h3>
+            <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/ROCIksHW2oc')">Watch</button>
+        </div>
+        <div class="serie">
+            <img src="./images/daria.jpg">
+            <h3>Daria</h3>
+            <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/mhYwcpw6yBY')">Watch</button>
+        </div>
     </section>
-</main>
 <div class="modal" id="loginModal">
     <div class="modal-content">
         <span id="closeModal" style="float: right; cursor: pointer;">&times;</span>
