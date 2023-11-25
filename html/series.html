@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="En series animadas podras encontrar todas las series y peliculas que busques">
+    <meta name="keywords" content="series, peliculas, animadas, animacion, streaming">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Series animadas-catalogo</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body class="bodygrid">
@@ -20,7 +22,7 @@
                     <a class="nav-link" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./series.html">Series</a>
+                    <a class="nav-link" href="./series.html">Titulos</a>
                 </li>                 
                 <li class="nav-item">
                     <a class="nav-link" href="./contactanos.html">Contactanos</a>
@@ -34,97 +36,74 @@
     </div>
   </nav>
 
-    <section class="movies">
-        <div class="movie">
-            <img src="./images/anastasia.webp" >
+    <section class="titles">
+        <div class="title">
+            <img class="titleimage" src="../images/anastasia.webp" >
             <h3>Anastasia</h3>
             <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/M0vnBeHeuzs')">Watch</button>
         </div>
-        <div class="movie">
-            <img src="./images/ghostintheshell.webp" >
-            <h3>Ghost in the shell</h3>
-            <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/8RF09G8Ymqg')">Watch</button>
+        <div class="title">
+            <img class="titleimage" src="../images/porcorosso.jpg" >
+            <h3>Porco Rosso</h3>
+            <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/qgDRjWBfmm0')">Watch</button>
         </div>
-        <div class="movie">
-            <img src="./images/spirited away.jpg" >
+        <div class="title">
+            <img class="titleimage" src="../images/spiritedaway.jpg" >
             <h3>Spirited away</h3>
             <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/CHCUkXUPkFM')">Watch</button>
         </div> 
-        <div class="movie">
-            <img src="./images/atlantis.jpg" >
+        <div class="title">
+            <img class="titleimage" src="../images/atlantis.jpg" >
             <h3>Atlantis</h3>
             <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/sZIimDPZQwg')">Watch</button>
         </div> 
-        <div class="movie">
-            <img src="./images/tarzan.jpg" >
+        <div class="title">
+            <img class="titleimage" src="../images/tarzan.jpg" >
             <h3>Tarzan</h3>
             <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/ie53R2HEZ6g')">Watch</button>
         </div> 
-    </section>
-    
-    <section class="series">
-        <div class="serie">
-            <img src="./images/adventuretime.jpg" >
+        <div class="title">
+            <img class="titleimage" src="../images/adventuretime.jpg" >
             <h3>Adventure time</h3>
             <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/fnCT7d7THpY')">Watch</button>
         </div>
-        <div class="serie">
-            <img src="./images/gravityfalls.jpg">
+        <div class="title">
+            <img class="titleimage" src="../images/gravityfalls.jpg">
             <h3>Gravity Falls</h3>
             <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/o2E2wLm_LlY')">Watch</button>
         </div>
-        <div class="serie">
-          <img src="./images/avatar.jpg">
+        <div class="title">
+          <img class="titleimage" src="../images/avatar.jpg">
           <h3>Avatar</h3>
           <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/ZaRwqa2xVJg')">Watch</button>
         </div>
-        <div class="serie">
-            <img src="./images/invencible.jpg">
+        <div class="title">
+            <img class="titleimage" src="../images/invencible.jpg">
             <h3>Invencible</h3>
             <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/ROCIksHW2oc')">Watch</button>
         </div>
-        <div class="serie">
-            <img src="./images/daria.jpg">
+        <div class="title">
+            <img class="titleimage" src="../images/daria.jpg">
             <h3>Daria</h3>
             <button class="btn btn-outline-warning" onclick="playVideo('https://www.youtube.com/embed/mhYwcpw6yBY')">Watch</button>
         </div>
     </section>
-<div class="modal" id="loginModal">
-    <div class="modal-content">
-        <span id="closeModal" style="float: right; cursor: pointer;">&times;</span>
-        <label for="username">Usuario</label>
-        <input type="text" id="username" class="form-input">
-        <label for="password">Contraseña</label>
-        <input type="password" id="password" class="form-input">
-        <button id="confirmButton" class="btn btn-outline-secondary">Confirm</button>
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span id="closeModal" style="float: right; cursor: pointer;">&times;</span>
+            <label for="username">Usuario</label>
+            <input type="text" id="username" class="form-input">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" class="form-input">
+            <button id="confirmButton" class="btn btn-outline-secondary">Confirm</button>
+        </div>
     </div>
-</div>
-
-<script>
-    const loginButton = document.getElementById('loginButton');
-    const loginModal = document.getElementById('loginModal');
-    const closeModal = document.getElementById('closeModal');
-    const confirmButton = document.getElementById('confirmButton');
-
-    loginButton.addEventListener('click', () => {
-        loginModal.style.display = 'block';
-    });
-
-    closeModal.addEventListener('click', () => {
-        loginModal.style.display = 'none';
-    });
-
-    confirmButton.addEventListener('click', () => {
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-        alert(`Username: ${username}\nPassword: ${password}`);
-    });
-</script>
-<script>
-    function playVideo(embedUrl) {
-        
-        window.location.href = `reproductor.html?embedUrl=${encodeURIComponent(embedUrl)}`;
-    }
-</script>
+    <footer class="footgrid bg-dark text-light text-center py-3" >
+        <div>
+            <p>mamaseimamasaimamacusa</p>
+        </div>
+    </footer>
+    <script src="../scripts/login.js"></script>
+    <script src="../scripts/series.js"></script>
 </body>
 </html>

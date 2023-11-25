@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="En series animadas podras encontrar todas las series y peliculas que busques">
+    <meta name="keywords" content="series, peliculas, animadas, animacion, streaming">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registrarse</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body class="bodygrid">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navgrid">
@@ -20,7 +22,7 @@
                         <a class="nav-link" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./series.html">Series</a>
+                        <a class="nav-link" href="./series.html">Titulos</a>
                     </li>                 
                     <li class="nav-item">
                         <a class="nav-link" href="./contactanos.html">Contactanos</a>
@@ -33,29 +35,34 @@
             </form>
         </div>
     </nav> 
-    <div class="contactgrid">
-        <div class="left-container social-icons">
-            <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
-            <a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter"></a>
-            <a href="https://www.whatsapp.com"><img src="whatsapp.png" alt="WhatsApp"></a>
-            <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
-        </div>
-        <div class="spacer"></div>
+    <div class="divregister">
         <form class="signin-form">
-            <h2 class="form-heading">Contactanos</h2>
+            <h2 class="form-heading">Sign In</h2>
             <div class="input-container">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" class="form-input" name="username" required>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="form-input" name="nombre" required>
             </div>
             <div class="input-container">
-                <label for="phone">Telefono</label>
-                <input type="text" id="phone" class="form-input" name="password" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" class="form-input" name="apellido" required>
             </div>
             <div class="input-container">
-                <label for="email">Mail</label>
-                <input type="text" id="email" class="form-input" name="username" required>
+                <label for="correo">Correo Electronico</label>
+                <input type="text" id="correo" class="form-input" name="correo" required>
             </div>
-            <button type="submit" class="btn btn-outline-secondary">Enviar</button>
+            <div class="input-container">
+                <label for="username">Username</label>
+                <input type="text" id="username" class="form-input" name="username" required>
+            </div>
+            <div class="input-container">
+                <label for="contrasena">Contraseña</label>
+                <input type="password" id="contrasena" class="form-input" name="contrasena" required>
+            </div>
+            <div class="input-container">
+                <label for="confcontrasena">Confirmar Contraseña</label>
+                <input type="password" id="confcontrasena" class="form-input" name="confcontrasena" required>
+            </div>
+            <button type="submit" class="btn btn-outline-secondary">Sign In</button>
         </form>
     </div>
     <div class="modal" id="loginModal">
@@ -68,26 +75,11 @@
             <button id="confirmButton" class="btn btn-outline-secondary">Confirm</button>
         </div>
     </div>
-
-    <script>
-        const loginButton = document.getElementById('loginButton');
-        const loginModal = document.getElementById('loginModal');
-        const closeModal = document.getElementById('closeModal');
-        const confirmButton = document.getElementById('confirmButton');
-
-        loginButton.addEventListener('click', () => {
-            loginModal.style.display = 'block';
-        });
-
-        closeModal.addEventListener('click', () => {
-            loginModal.style.display = 'none';
-        });
-
-        confirmButton.addEventListener('click', () => {
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            alert(`Username: ${username}\nPassword: ${password}`);
-        });
-    </script>
+    <footer class="footgrid bg-dark text-light text-center py-3" >
+        <div>
+            <p>mamaseimamasaimamacusa</p>
+        </div>
+    </footer>
+    <script src="../scripts/login.js"></script>
 </body>
 </html>
