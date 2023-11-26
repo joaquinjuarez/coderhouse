@@ -1,0 +1,266 @@
+$principalfont:'Open Sans', sans-serif;
+$secondarycolor: white;
+$principalcolor: gray;
+
+a, p, h2, h3, button, label {
+    font-family: $principalfont;
+}
+
+.carousel-item {
+    filter: blur(3px);
+  
+    &.active {
+      filter: none;
+    }
+  }
+  
+  .carousel-item-left, .carousel-item-right {
+    filter: blur(3px);
+  }
+  
+  .carousel-inner {
+    display: flex;
+  }
+  
+  .carouselitemgrid {
+    height: 500px;
+    width: 850px;
+  }
+  
+  .carouselnextgrid {
+    grid-area: 7 / 6 / 8 / 7;
+  }
+  
+  .carouselprevgrid {
+    grid-area: 7 / 2 / 8 / 3;
+  }
+  
+  .iframegrid {
+    height: 90%;
+    width: 90%;
+  }
+  
+  .bodygrid {
+    align-items: start;
+    background-color: $principalcolor;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    min-height: 100vh;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 100%, 100%;
+    background-image: none;
+  
+    &:after {
+      font-size: 55px;
+      color: rgb(0, 0, 0);
+    }
+  }
+  
+  .carousel-control-next-icon:after {
+    content: '>';
+  }
+  
+  .carousel-control-prev-icon:after {
+    content: '<';
+  }
+  
+  .seriesmain {
+    grid-area: 2 / 1 / 11 / 8;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $principalcolor;
+  }
+  
+  .titles {
+    grid-area: 3 / 2 / 11 / 7;
+    margin-bottom: 40px;
+    max-height: 400px;
+  }
+  
+  .title {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    max-width: 240px;
+    text-align: center;
+    background-color: rgba(43, 41, 41, 0.644);
+    border-radius: 5px;
+    max-height: 370px;
+    min-width: 240px;
+  }
+  
+  .titleimage {
+    max-width: 200px;
+    height: 250px;
+  }
+  
+  .seriesbutton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  
+  .reproductordiv {
+    grid-area: 5 / 3 / 9 / 7;
+  }
+  
+  .navgrid {
+    grid-area: 1 / 1 / 2 / 8;
+  }
+  
+  .reproductorimage {
+    grid-area: 3 / 3 / 5 / 4;
+    width: 100%;
+  }
+  
+  .containerimage {
+    width: 100%;
+  }
+  
+  .reproductortext {
+    grid-area: 3 / 4 / 5 / 6; 
+  }
+  
+  .reproductorvideo {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #videoContainer {
+    max-width: 50%;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .modal-content {
+    background: #fff;
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .divregister {
+    display: grid;
+    place-items: center;
+    max-height: 650px;
+    grid-area: 3 / 4 / 10 / 5;
+  }
+  
+  .contactgrid {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1.5fr;
+    align-items: center;
+    height: 600px;
+    justify-items: center;
+    grid-area: 3 / 2 / 9 / 7;
+  }
+  
+  .signin-form {
+    background-color: $secondarycolor;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    height: 650px;
+  
+    .form-heading {
+      margin: 0;
+      padding: 10px 0;
+      font-size: 1.5rem;
+    }
+  
+    .input-container {
+      text-align: left;
+      margin: 10px 0;
+    }
+  
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+  }
+  
+  .left-container {
+    background-color: $secondarycolor;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    .left-text {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  
+    .spacer {
+      width: 100%;
+    }
+  }
+  
+  .divwelcome {
+    grid-area: 3 / 3 / 4 / 6;
+    text-align: center;
+    align-items: center;
+  
+    .welcometext {
+      background-color: $secondarycolor;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .divtrailer {
+    grid-area: 4 / 2 / 9 / 7;
+    max-height: 400px;
+    max-width: 855px;
+  }
+  
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+  
+    a {
+      text-decoration: none;
+    }
+  
+    img {
+      width: 32px;
+      height: 32px;
+      margin: 0 5px;
+    }
+  }
+  
