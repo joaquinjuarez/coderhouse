@@ -19,7 +19,7 @@ if (embedUrl) {
 if (embedUrl == 'https://www.youtube.com/embed/ZaRwqa2xVJg') {
     const image = document.getElementById('reproductorimage');
     var img = new Image();
-    img.src = '../images/ang.png';
+    img.src = 'images/ang.png';
     img.height = '150' ;
     img.width = '150' ;
     image.appendChild(img);
@@ -29,7 +29,7 @@ if (embedUrl == 'https://www.youtube.com/embed/ZaRwqa2xVJg') {
 if (embedUrl == 'https://www.youtube.com/embed/fnCT7d7THpY') {
     const image = document.getElementById('reproductorimage');
     var img = new Image();
-    img.src = '../images/adventuretimaicon.jpg';
+    img.src = 'images/adventuretimaicon.jpg';
     img.height = '150' ;
     img.width = '150' ;
     image.appendChild(img);
@@ -39,7 +39,7 @@ if (embedUrl == 'https://www.youtube.com/embed/fnCT7d7THpY') {
 if (embedUrl == 'https://www.youtube.com/embed/o2E2wLm_LlY') {
     const image = document.getElementById('reproductorimage');
     var img = new Image();
-    img.src = '../images/gravityfallsicon.jpg';
+    img.src = 'images/gravityfallsicon.jpg';
     img.height = '150' ;
     img.width = '150' ;
     image.appendChild(img);
@@ -49,7 +49,7 @@ if (embedUrl == 'https://www.youtube.com/embed/o2E2wLm_LlY') {
 if (embedUrl == 'https://www.youtube.com/embed/ROCIksHW2oc') {
     const image = document.getElementById('reproductorimage');
     var img = new Image();
-    img.src = '../images/invencibleicon.png';
+    img.src = 'images/invencibleicon.png';
     img.height = '150' ;
     img.width = '150' ;
     image.appendChild(img);
@@ -59,7 +59,7 @@ if (embedUrl == 'https://www.youtube.com/embed/ROCIksHW2oc') {
 if (embedUrl == 'https://www.youtube.com/embed/mhYwcpw6yBY') {
     const image = document.getElementById('reproductorimage');
     var img = new Image();
-    img.src = '../images/dariaicon.jpg';
+    img.src = 'images/dariaicon.jpg';
     img.height = '150' ;
     img.width = '150' ;
     image.appendChild(img);
@@ -69,7 +69,7 @@ if (embedUrl == 'https://www.youtube.com/embed/mhYwcpw6yBY') {
 if (embedUrl == 'https://www.youtube.com/embed/M0vnBeHeuzs') {
     const image = document.getElementById('reproductorimage');
     var img = new Image();
-    img.src = '../images/anastaciaicon.jpg';
+    img.src = 'images/anastaciaicon.jpg';
     img.height = '150' ;
     img.width = '150' ;
     image.appendChild(img);
@@ -79,7 +79,7 @@ if (embedUrl == 'https://www.youtube.com/embed/M0vnBeHeuzs') {
 if (embedUrl == 'https://www.youtube.com/embed/qgDRjWBfmm0') {
     const image = document.getElementById('reproductorimage');
     var img = new Image();
-    img.src = '../images/porcorossoicon.jpg';
+    img.src = 'images/porcorossoicon.jpg';
     img.height = '150' ;
     img.width = '150' ;
     image.appendChild(img);
@@ -89,7 +89,7 @@ if (embedUrl == 'https://www.youtube.com/embed/qgDRjWBfmm0') {
 if (embedUrl == 'https://www.youtube.com/embed/CHCUkXUPkFM') {
     const image = document.getElementById('reproductorimage');
     var img = new Image();
-    img.src = '../images/spiritedawayicon.jpg';
+    img.src = 'images/spiritedawayicon.jpg';
     img.height = '150' ;
     img.width = '150' ;
     image.appendChild(img);
@@ -99,7 +99,7 @@ if (embedUrl == 'https://www.youtube.com/embed/CHCUkXUPkFM') {
 if (embedUrl == 'https://www.youtube.com/embed/sZIimDPZQwg') {
     const image = document.getElementById('reproductorimage');
     var img = new Image();
-    img.src = '../images/atlantisicon.png';
+    img.src = 'images/atlantisicon.png';
     img.height = '150' ;
     img.width = '150' ;
     image.appendChild(img);
@@ -109,7 +109,7 @@ if (embedUrl == 'https://www.youtube.com/embed/sZIimDPZQwg') {
 if (embedUrl == 'https://www.youtube.com/embed/ie53R2HEZ6g') {
     const image = document.getElementById('reproductorimage');
     var img = new Image();
-    img.src = '../images/tarzanicon.jpg';
+    img.src = 'images/tarzanicon.jpg';
     img.height = '150' ;
     img.width = '150' ;
     image.appendChild(img);
